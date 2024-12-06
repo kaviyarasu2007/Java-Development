@@ -1,0 +1,18 @@
+public class encalusption {
+    private int x;
+    public void setX(int a){
+        x=a;
+    }
+    public int getX(){
+        return x;
+    }
+}
+class uman {
+    public static void main(String[] args){
+        encalusption obj=new encalusption();
+        obj.setX(5);
+
+        int GettingX=obj.getX();
+        System.out.println(GettingX);
+    }
+}
