@@ -1,0 +1,19 @@
+public class multilevelinheretance {
+    int x=5;
+    int y=6;
+}
+class sam1 extends multilevelinheretance {
+    int z=59;
+}
+class sam2 extends sam1{
+    int rs=45;
+}
+class sam3 extends sam2{
+    public static void main(String[] args){
+        sam3 obj=new sam3();
+        System.out.println(obj.x);
+        System.out.println(obj.y);
+        System.out.println(obj.z);
+        System.out.println(obj.rs);
+    }
+}
