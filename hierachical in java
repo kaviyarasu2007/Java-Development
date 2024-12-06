@@ -1,0 +1,19 @@
+public class hierachical {
+    public void msgA(){
+        System.out.println("hierachical");
+    }
+}
+class b extends hierachical {
+}
+class c extends hierachical {
+}
+class d extends hierachical {
+}
+class e extends hierachical {
+}
+class Myclass{
+    public static void main(String[] args){
+        hierachical hi = new hierachical();
+        hi.msgA();
+    }
+}
