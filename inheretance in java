@@ -1,0 +1,9 @@
+public class inheretance {
+    int x=5;
+}
+ class sam extends inheretance{
+public static void main(String [] args){
+          sam obj = new sam();
+           System.out.println(obj.x);
+}
+}
