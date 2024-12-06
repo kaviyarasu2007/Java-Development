@@ -1,0 +1,32 @@
+package multilevel;
+
+public class inheritance {
+    public void method(){
+        System.out.println("Class X method");
+    }
+}
+class x extends inheritance{
+    public void method(){
+        System.out.println("Class y method");
+    }
+}
+class y extends  x{
+    public void method(){
+        System.out.println("Class z method");
+    }
+}
+class z extends y{
+    public void method(){
+        System.out.println("Class w method");
+    }
+}
+class w extends z{
+    public static void main(String[] args) {
+        z zoo = new z();
+        zoo.method();
+       y yoo = new y();
+       yoo.method();
+       x xoo = new x();
+       xoo.method();
+    }
+}
