@@ -1,0 +1,12 @@
+public class privatee {
+    public int num=5;
+    int y=5;
+
+}
+
+class second{
+    public static void main(String[] args) {
+        privatee p=new privatee();
+        System.out.println(p.num);
+    }
+}
