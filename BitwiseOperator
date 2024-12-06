@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class bitwiseoperator {
+       public static void main(String[] args) {
+         int x,y;
+         Scanner sc = new Scanner(System.in);
+         System.out.println("Enter the first number");
+         x = sc.nextInt();
+         System.out.println("Enter the second number");
+         y = sc.nextInt();
+         System.out.println("The result is "+(x & y));
+         System.out.println("The result is "+(x | y));
+         System.out.println("The result is "+(x ^ y));
+         System.out.println("The result is "+(x << y));
+         System.out.println("The result is "+(x >> y));
+         System.out.println("The result is "+(x >>> y));
+         System.out.println("The result is "+(~x));
+         System.out.println("The result is "+(~y));
+         sc.close();
+       }
+}
