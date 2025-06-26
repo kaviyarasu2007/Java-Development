@@ -1,0 +1,62 @@
+import java.util.*;
+
+public class LinkedList_Head {
+    class Node {
+        int data;
+        Node next;
+
+        Node(int data) {
+            this.data = data;
+            this.next = null;
+        }
+    }
+
+    public static void main(String[] args) {
+        Scanner user = new Scanner(System.in);
+        LinkedList_Head list = new LinkedList_Head();
+
+        
+        Node n1 = list.new Node(10);
+        Node n2 = list.new Node(20);
+        
+        
+        n1.next = n2;
+        
+        Node head = n1;
+        Node tail = n2;  
+        
+        System.out.println("Original list:");
+        Node current = head;
+        while (current != null) {
+            System.out.print(" " + current.data);
+            current = current.next;
+        }
+        System.out.println();
+
+        if (head == null) {
+            System.out.println("List is Empty");
+        } else {
+          
+            if (head.next == null) {
+                
+                head = null;
+                tail = null;
+            } else {
+                current = head;
+                while (current.next != tail) {
+                    current = current.next;
+                }
+                current.next = null;
+                tail = current;
+            }
+            
+            System.out.println("After removing last element:");
+            current = head;
+            while (current != null) {
+                System.out.print(" " + current.data);
+                current = current.next;
+            }
+            System.out.println();
+        }
+    }
+}
